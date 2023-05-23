@@ -5,66 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoja de Vida</title>
-    <style>
-        table, th, td{
-            border: 1px solid black;
-        }
-    </style>
+    <link href="style.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>Infromacion General</h1>
-    <h2>Nombre:</h2>
-    <h3> Ihosvani Fernando</h3>
-    <h2>Apellido:</h2>
-    <h3> Velasquez Fernandez</h3>
-    <h2>Email:</h2>
-    <h3>fvelasquez@gmail.com</h3>
-    <h2>Telefono:</h2>
-    <h3>+504 9349-0241</h3>
-    <h2>Ubicacion Actual:</h2>
-    <h3>Honduras,Fracisco Morazan,Comayaguela,bulevard del norte, Res Granada, calle principal, bloque c.</h3>
-    <h2><a href="https://github.com/Fernando4077">GitHub</a></h2>
-    <h2><a href="https://www.linkedin.com/in/fernando-velasquez-412793190/?trk=public-profile-join-page">Linkedln</a></h2>
-    <h2>Experiencia
-        <ul>
-            <li>OPSA:  Desarrolladores full stack</li>
-            <li>Pepsico: Desarrolladores full stack</li>
-            <li>Rapy: desarrolladores full stack</li>
-        </ul>
-    </h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Habilidades</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th>Tecnologicas</th>
-                <th>Tecnicas</th>
-            </tr>
-            <tr>
-                <td>Administracion de redes </td>
-                <td>Mantenimiento de base de datos</td>
-            </tr>
-            <tr>
-                <td>Analisis de Big Data</td>
-                <td>Herramientas Office</td>
-            </tr>
-            <tr>
-                <td>Ciber Seguridad </td>
-                <td>Diseño Grafico </td>
-            </tr>
-        </tbody>
-
-    </table>
-    <label for="Itextarea">Mensaje</label>
-    <textarea name="Itextarea" value="Mensaje"></textarea>
-    <br>
-    <form>
-        <label for="iemail">Email</label>
-        <input id="iemail" type="email" name="email">
-        <input type="submit" value="Contactar">
-    </form>
+    <div class="conteiner">
+        <div class="left">
+            <div>
+                <img src="foto.jpg" alt="2x2" width="120" height="120"  >
+            </div>
+            <br>
+            <h2>Email:</h2>
+            <img src="emailicon.jpg" alt="2x2" width="30" height="30">
+            <h3>fvelasquez@gmail.com</h3>
+            <h2>Telefono:</h2>
+            <h3>+504 9349-0241</h3>
+            <h2>Ubicacion Actual:</h2>
+            <h3>Honduras,Fracisco Morazan,Comayaguela,bulevard del norte, Res Granada, calle principal, bloque c.</h3>
+            <h1>______________________</h1>
+            <h3>Redes Sociales</h3>
+            <div class="lk">
+                    <form action="https://github.com/Fernando4077" target="_blank">
+                        <button type="submit">GitHub</button>
+                        </form>
+                        <br>
+                        <form action="https://www.linkedin.com/in/fernando-velasquez-412793190/?trk=public-profile-join-page" target="_blank">
+                        <button type="submit">Linkedln</button>
+                    </form>
+            </div>
+            <label for="Itextarea">Mensaje</label>
+            <textarea name="Itextarea" value="Mensaje"></textarea>
+            <br>
+            <form>
+                <label for="iemail">Email</label>
+                <input id="iemail" type="email" name="email">
+                <input type="submit" value="Contactar">
+            </form>
+        </div>
+        <div class="rigth">
+            <h1>Ihosvani Fernando </h1>
+            <h2> Velasquez Fernandez</h2>
+            <h1 class="divisores" >_____________________________________________________</h1>
+                <h2>Experiencia
+                    <ul>
+                        <li>OPSA:  Desarrolladores full stack</li>
+                        <li>Pepsico: Desarrolladores full stack</li>
+                        <li>Rapy: desarrolladores full stack</li>
+                    </ul>
+                </h2>
+                <h1 class="divisores">_____________________________________________________</h1>
+                <div id="table">
+                    <table>
+                        <theadx>
+                            <tr>
+                                <th colspan="2">Habilidades</th>
+                            </tr>
+                        </theadx>
+                        <tbody>
+                            <tr>
+                                <th>Tecnologicas</th>
+                                <th>Tecnicas</th>
+                            </tr>
+                            <tr>
+                                <td>Administracion de redes </td>
+                                <td>Mantenimiento de base de datos</td>
+                            </tr>
+                            <tr>
+                                <td>Analisis de Big Data</td>
+                                <td>Herramientas Office</td>
+                            </tr>
+                            <tr>
+                                <td>Ciber Seguridad </td>
+                                <td>Diseño Grafico </td>
+                            </tr>
+                        </tbody>
+                </div>
+        </div>
+    </div>
 </body>
 </html>
